@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Fabricamos shampoo y acondicionadores sólidos, veganos,  sin parabenos, siliconas y sulfatos. No testeamos en animales y trabajamos con materiales reciclables.">
+    <meta name="keywords" content="Shampoo solido, acondicionador solido, solido, vegano, salud, belleza, higiene, cosmetica, natural, sin parabenos">
+    <title>Mi cuenta</title>
+</head>
+<body>
+    <!--Menú de navegación-->
+    <header>
+        <nav>
+            <!--Inicio sección cuenta/registro-->
+            <div class="cuenta navbar navbar-expand">
+                <ul class="navbar-nav ms-auto">
+                    <li><img src="../images/usuario.svg" alt="Ícono usuario" class="cuenta__imagen"></li>
+                    <li class="nav-item"><a href="../pages/registro.html" class="nav-link">Crear cuenta</a></li>
+                    <li class="nav-item"><a href="../pages/login.html" class="nav-link">Iniciar sesión</a></li>
+                </ul>
+            </div>
+    
+            <!--Inicio barra de navegación de las secciones de la web-->
+    
+            <div class="menu navbar navbar-expand-lg navbar-light shadow-sm rounded">
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo.svg" class="menu__logo" alt="Logo Bimba Biocosmética" title="Bimba biocosmética"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link menu__link" href="../index.html">Incio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menu__link" href="pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item menu__linkDropdown" href="../pages/productos.html">Shampoo</a></li>
+                                <li><a class="dropdown-item menu__linkDropdown" href="../pages/productos.html">Acondicionador</a></li>
+                                <li><a class="dropdown-item menu__linkDropdown" href="../pages/productos.html">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__link" href="../pages/preguntas-frecuentes.html">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+    
+                    <form class="d-flex">
+                        <input class="form-control me-2 camposFormulario" type="search" placeholder="Buscar" aria-label="Search">
+                    </form>
+      
+                    <div class="nav-link">
+                        <img src="../images/carrito.svg" alt="Carrito">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4 px-5">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Iniciar sesión</li>
+            </ol>
+        </nav>
+        <!--Inicio formulario de inicio de sesión-->
+        <section class="row justify-content-center mb-4">
+            <div class="col-12 col-md-8">
+                
+                <h1 class="mb-4">Iniciar sesión</h1>
+
+                <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+                    <input class="form-control mb-2" type="email" name="email" placeholder="Correo electrónico" required>
+                    <input class="form-control mb-2" type="password" name="contrasena" placeholder="Contraseña" id="contrasena" required>
+                    <label class="mb-3 subrayado" for="contrasena">¿Olvidaste tu contraseña?</label>
+                    <input class="botones btn col-12 mb-4" type="submit" value="Iniciar sesión">
+                </form>
+                
+                <p class="text-center">¿No tenés cuenta? <a href="nueva-cuenta.html">Registráte acá</a></p>
+            </div>
+        </section>
+    </main>
+        
+    <!-- Footer -->
+    <footer class="container-fluid px-5 footer">
+        <div class="row justify-content-between">
+    
+           <!--Inicio sección 1: Navegación en el pie de la página-->
+            <div class="col-sm-6 col-md-3 gy-5 col-sm-auto">
+                <h2>Navegación</h2>
+                <nav>    
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/productos.html">Productos</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/preguntas-frecuentes.html">Preguntas</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>                
+                </nav>
+            </div>
+    
+            <!--Inicio sección 2: Puntos de contacto-->
+            <div class="col-sm-6 col-md-4 gy-5 col-sm-auto">
+                <h2>Contactános</h2>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:bimbabiocosmetica@gmail.com"><img src="../images/arroba.svg" alt="ïcono de arroba" class="footer__imagenContacto"> bimbabiocosmética@gmaill.com</a></li>
+                    <li><img src="../images/ubicacion.svg" alt="Ícono de ubicación" class="footer_imagenContacto"> Villa Adelina</li>
+                </ul>
+            </div>
+    
+            <!--Inicio sección 3: Links a redes sociales-->
+            <div class="col-sm-6 col-md-2 gy-5 col-sm-auto">
+                <h2>Redes</h2>
+                <a href="https://www.facebook.com/bimbabiocosmetica-104029528252820" target="_blank">
+                    <img src="../images/facebook.svg" alt="Ícono cuenta de Facebook" title="Facebook Bimba Biocosmética" class="footer__redes">
+                </a>
+                <a href="https://www.instagram.com/bimbabiocosmetica/" target="_blank">
+                    <img src="../images/instagram.svg" alt="Ícono cuenta de Instagram" Title="Instagram Bimba Biocosmética" class="footer__redes">
+                </a>
+            </div>
+    
+            <!--Inicio sección 4: Suscripción newsletter-->
+            <div class="col-sm-6 col-md-3 gy-5 col-sm-auto">
+                <h2>Newsletter</h2>
+                <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control camposFormulario" placeholder="Email" aria-label="Email" aria-describedby="button-addon2" required>
+                        <button class="btn botones--pequeños" type="button" id="button-addon2">Enviar</button>
+                    </div>     
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

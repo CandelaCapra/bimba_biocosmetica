@@ -1,0 +1,18 @@
+@media only screen and (max-width: 576px){
+    .bannerPrincipal__texto__parrafo, .categorias {
+        display: none;
+    }
+
+    .bannerPrincipal__texto h1 {
+        margin: 1rem 0rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .bannerPrincipal__texto__parrafo span, .categorias {
+        display: none;
+    }
+}
+
+

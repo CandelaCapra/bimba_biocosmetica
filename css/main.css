@@ -1,0 +1,206 @@
+@charset "UTF-8";
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  text-align: justify; }
+
+main {
+  animation-name: cargaPagina;
+  animation-duration: 0.7s; }
+  main img {
+    width: 100%;
+    height: auto; }
+
+@keyframes cargaPagina {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.635rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem); } }
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center; }
+
+h2 {
+  font-size: 1.25rem; }
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500; }
+
+a {
+  text-decoration: none;
+  color: #212121; }
+  a:hover {
+    text-decoration: underline;
+    color: #212121; }
+
+.camposFormulario {
+  border-color: #cae0d2;
+  font-weight: 300; }
+
+.badge--verde {
+  /*esto modifica una clase de Bootstrap*/
+  background-color: #BFF0CF;
+  color: #212121;
+  font-weight: 300; }
+
+.botones, .botones--medianos, .botones--pequeños {
+  background-color: #335145;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: background-color 1s; }
+  .botones:hover, .botones--medianos:hover, .botones--pequeños:hover {
+    background-color: #BFF0CF;
+    color: #212121;
+    text-decoration: none; }
+  .botones--medianos {
+    font-size: 0.875rem; }
+  .botones--pequeños {
+    font-size: 0.75rem; }
+
+header {
+  position: sticky;
+  top: 0rem;
+  z-index: 50; }
+
+.cuenta {
+  padding: 0rem 3rem;
+  background-color: #335145; }
+  .cuenta a {
+    color: #ffffff;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.50rem; }
+    .cuenta a:hover {
+      color: #ffffff;
+      transform: translateY(0.25rem);
+      text-decoration: none; }
+  .cuenta__imagen {
+    max-width: 1rem;
+    margin-top: 0.10rem; }
+
+.menu {
+  padding: 0rem 3rem;
+  background-color: #ffffff; }
+  .menu a:hover {
+    transform: translateY(0.25rem);
+    text-decoration: none; }
+  .menu > a:hover {
+    transform: translateY(0rem); }
+  .menu__logo {
+    height: auto;
+    width: 100%;
+    min-width: 3.75rem;
+    max-width: 9.375rem; }
+  .menu__link {
+    color: #212121 !important; }
+    .menu__linkDropdown:hover {
+      background-color: #BFF0CF; }
+
+.footer {
+  background: linear-gradient(180deg, #E8F5E9 39%, #cae0d2 95%); }
+  .footer h2 {
+    color: #335145; }
+  .footer a:hover {
+    color: #212121; }
+  .footer__imagenContacto {
+    padding-bottom: 0.25rem; }
+  .footer__redes:hover {
+    opacity: 70%; }
+
+/*Página principal*/
+.bannerPrincipal {
+  color: #ffffff; }
+  .bannerPrincipal__texto {
+    position: absolute; }
+    .bannerPrincipal__texto h1 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      text-align: left; }
+    .bannerPrincipal__texto__parrafo {
+      text-align: justify; }
+
+.beneficios {
+  text-align: center; }
+  .beneficios div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .beneficios p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    padding: 1rem; }
+  .beneficios span {
+    font-weight: 400;
+    display: block; }
+  .beneficios__imagen {
+    height: 3.625rem;
+    width: auto; }
+
+.grillaProductos {
+  text-align: center; }
+  .grillaProductos h3 {
+    margin-bottom: 0rem; }
+  .grillaProductos__precio {
+    color: #335145;
+    font-weight: 500; }
+  .grillaProductos div:hover {
+    transform: scale(1.1, 1.1); }
+  .grillaProductos__titulo:hover {
+    transform: none !important; }
+
+/*Animación página nosotros*/
+.paginaNosotros {
+  text-align: center; }
+  .paginaNosotros__imagen {
+    animation-name: agrandar;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease; }
+
+@keyframes agrandar {
+  0% {
+    width: 0%;
+    height: auto; }
+  100% {
+    width: 100%; } }
+
+.error404 {
+  background-image: url(../images/error.jpeg);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .error404__div {
+    background-color: #ffffff;
+    padding: 7rem 5rem; }
+  .error404__img {
+    max-width: 70vh; }
+  .error404__texto {
+    text-align: left; }
+
+table {
+  margin-top: 1.563rem;
+  border: solid #212121 0.063rem; }
+  table th {
+    color: #335145;
+    background-color: #E8F5E9;
+    font-size: 1.125rem;
+    font-weight: 700; }
+  table td, table th {
+    border: solid #212121 0.063rem;
+    padding: 0.625rem; }
+
+@media only screen and (max-width: 576px) {
+  .bannerPrincipal__texto__parrafo, .categorias {
+    display: none; }
+  .bannerPrincipal__texto h1 {
+    margin: 1rem 0rem;
+    font-size: 1.5rem; } }
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .bannerPrincipal__texto__parrafo span, .categorias {
+    display: none; } }

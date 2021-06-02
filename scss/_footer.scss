@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+.footer {
+    background: linear-gradient(180deg, $verdeClaro 39%, $verdeIntermedio 95%);
+    h2 {
+        color: $verdeOscuro;
+    }
+    a:hover{
+        color: $negro;
+    }
+    &__imagenContacto {
+        padding-bottom: 0.25rem;
+    }
+    &__redes:hover {
+        opacity: 7%*10;
+    }
+}
+

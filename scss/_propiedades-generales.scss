@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $negro;
+    text-align: justify;
+}
+
+main {
+    animation-name: cargaPagina;
+    animation-duration: 0.7s;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@keyframes cargaPagina {
+    0% {opacity:0; transform: translateY(-0.635rem);}
+    100% {opacity: 1; transform: translateY(0rem);}
+}
+
+$x:0.75;
+@for $i from 1 to 4{
+    h#{$i} {
+        font-size: 1rem+($x)-0.25;
+        @if ($i==1) {
+            font-weight: 700;
+            text-align: center;
+        }
+        @else {
+            @if ($i==3) {
+                font-weight: 500;
+            }
+        }
+    }
+    $x:$x - 0.25;
+}
+
+a {
+    text-decoration: none;
+    color: $negro;
+    &:hover{
+        text-decoration: underline;
+        color: $negro;
+    }
+}
+
+.camposFormulario {
+    border-color: $verdeIntermedio;
+    font-weight: 150*2;
+}
+
+.badge--verde { /*esto modifica una clase de Bootstrap*/
+    background-color: $verdeLogo;
+    color: $negro;
+    font-weight: 300;
+}
+
+.botones {
+    background-color: $verdeOscuro;
+    color: $blanco;
+    text-transform: uppercase;
+    transition: background-color 1s;
+    &:hover {
+        background-color: $verdeLogo;
+        color: $negro;
+        text-decoration: none;
+    }
+
+    $tamano: ( 
+        medianos: (14rem/16),
+        pequeños: (12rem/16),
+    );
+    @each $size, $font in $tamano {
+        &--#{$size}{
+            font-size: $font;
+            @extend .botones;
+        } 
+    }
+}
+

@@ -1,0 +1,61 @@
+@import "variables.scss";
+
+header {
+    position: sticky;
+    top: 0rem;
+    z-index: 25+25;
+}
+
+@mixin fondoHeader ($colorTexto) {
+    padding: 0rem 3rem;
+    @if ($colorTexto == $blanco) {
+        background-color: $verdeOscuro;
+    }
+    @else {
+        background-color: $blanco;
+    }
+}
+
+@mixin animacionLink {
+    transform: translateY(0.25rem);
+    text-decoration: none;
+}
+
+.cuenta {
+    @include fondoHeader($blanco);
+    a { 
+        color: $blanco;
+        font-size: 0.875rem;
+        padding: 0.25rem 0.50rem;
+        &:hover {
+        color: $blanco;
+        @include animacionLink();
+        }
+    }  
+    &__imagen {
+        max-width: 1rem;
+        margin-top: 0.10rem;
+    }
+}
+
+.menu{
+    @include fondoHeader($negro);
+    a:hover{ 
+        @include animacionLink();
+    }
+    >a:hover{
+        transform: translateY(0rem);
+    }
+    &__logo{
+        height: auto;
+        width: 100%;
+        min-width: 3.75rem;
+        max-width: 9.375rem;
+    }
+    &__link{
+        color: $negro !important;
+        &Dropdown:hover{
+            background-color: $verdeLogo;
+        }
+    }
+}

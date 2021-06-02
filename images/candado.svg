@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44.667" height="58" viewBox="0 0 44.667 58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #335145;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Icon_material-lock-outline" data-name="Icon material-lock-outline" transform="translate(1 1)">
+    <path id="Icon_material-lock-outline-2" data-name="Icon material-lock-outline" class="cls-1" d="M27.333,44.167A5.333,5.333,0,1,0,22,38.833,5.349,5.349,0,0,0,27.333,44.167Zm16-24H40.667V14.833a13.333,13.333,0,1,0-26.667,0v5.333H11.333A5.349,5.349,0,0,0,6,25.5V52.167A5.349,5.349,0,0,0,11.333,57.5h32a5.349,5.349,0,0,0,5.333-5.333V25.5A5.349,5.349,0,0,0,43.333,20.167ZM19.067,14.833a8.267,8.267,0,1,1,16.533,0v5.333H19.067ZM43.333,52.167h-32V25.5h32Z" transform="translate(-6 -1.5)"/>
+  </g>
+</svg>

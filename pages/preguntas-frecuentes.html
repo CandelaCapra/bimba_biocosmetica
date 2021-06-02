@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Respondemos tus preguntas sobre nuestros productos, medios de pago y de envío.">
+    <meta name="keywords" content="Shampoo solido, acondicionador solido, solido, vegano, salud, belleza, higiene, cosmetica, natural, sin parabenos">
+    <title>Preguntas frecuentes</title>
+</head>
+<body>
+    <!--Menú de navegación-->
+    <header>
+        <nav>
+            <!--Inicio sección cuenta/registro-->
+            <div class="cuenta navbar navbar-expand">
+                <ul class="navbar-nav ms-auto">
+                    <li><img src="../images/usuario.svg" alt="Ícono usuario" class="cuenta__imagen"></li>
+                    <li class="nav-item"><a href="../pages/registro.html" class="nav-link">Crear cuenta</a></li>
+                    <li class="nav-item"><a href="../pages/login.html" class="nav-link">Iniciar sesión</a></li>
+                </ul>
+            </div>
+    
+            <!--Inicio barra de navegación de las secciones de la web-->
+    
+            <div class="menu navbar navbar-expand-lg navbar-light shadow-sm rounded">
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo.svg" class="menu__logo" alt="Logo Bimba Biocosmética" title="Bimba biocosmética"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link menu__link" href="../index.html">Incio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menu__link" href="pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item menu__linkDropdown" href="../pages/productos.html">Shampoo</a></li>
+                                <li><a class="dropdown-item menu__linkDropdown" href="../pages/productos.html">Acondicionador</a></li>
+                                <li><a class="dropdown-item menu__linkDropdown" href="../pages/productos.html">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__link" href="../pages/preguntas-frecuentes.html">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu__link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+    
+                    <form class="d-flex">
+                        <input class="form-control me-2 camposFormulario" type="search" placeholder="Buscar" aria-label="Search">
+                    </form>
+      
+                    <div class="nav-link">
+                        <img src="../images/carrito.svg" alt="Carrito">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Inicio sección preguntas frecuentes-->
+    <main class="container-fluid">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4 px-5">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Preguntas</li>
+            </ol>
+        </nav>
+
+        <section class="row justify-content-center">
+            <div class="col-sm-10 col-md-8">
+                <h1>Preguntas frecuentes</h1>
+                <div class="accordion mt-4 mb-4" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                ¿Cómo se usa el shampoo sólido?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Para usar nuestro shampoo sólido solo tenés que seguir estos pasos:</p>
+                                <ol>
+                                    <li>Humedecer el cabello</li>
+                                    <li>Frotar el shampoo con las manos para hacer espuma</li>
+                                    <li>Masajear el cuero cabelludo</li>
+                                    <li>Enjuagar con abundante agua</li>
+                                    </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Cómo se usa el acondicionador?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Nuestro acondicionador se puede usar de dos maneras:</p>
+                                <ol>
+                                    <li>Sólido: Usar la barra directamente sobre el cabello y luego enjuagar.</li>
+                                    <li>Baño de crema: Derretir medio corazón en medio pocillo con agua hirviendo y revolver hasta fundir. Para una mejor consistencia se puede enfriar. Luego aplicar sobre el pelo, esperar unos minutos y enjuagar bien.</li>
+                                </ol>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Cuánto dura?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Las pastillas pesan 100 gramos y duran más de 80 lavados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿El shampoo tiene período de ajuste o adaptación?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Nuestros productos no necesitan período de ajuste, vas a notar los cambios en el primer lavado.</p>                
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Qué es el SCI?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>El SCI es un tensioactivo derivado del coco que proporciona mucha espuma y deja un efecto suave en el cabello.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                ¿Hacen envíos?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Sí, a través de MercadoEnvíos o por mensajería privada.</p>
+                                <table>
+                                    <tr>
+                                        <th>Zona</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                    <tr>
+                                        <td>C.A.B.A.</td>
+                                        <td>$180</td>
+                                    </tr>
+                                    <tr>
+                                        <td>G.B.A.</td>
+                                        <td>$380</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Resto del país</td>
+                                        <td>$500</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                ¿Se puede retirar personalmente?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Sí, pero hay que coordinar previamente el día y horario de entrega.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                ¿Cuáles son las formas de pago?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Se puede abonar con tarjeta a través de MercadoPago o en efectivo si se retira en persona.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>       
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid px-5 footer">
+        <div class="row justify-content-between">
+    
+           <!--Inicio sección 1: Navegación en el pie de la página-->
+            <div class="col-sm-6 col-md-3 gy-5 col-sm-auto">
+                <h2>Navegación</h2>
+                <nav>    
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/productos.html">Productos</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/preguntas-frecuentes.html">Preguntas</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>                
+                </nav>
+            </div>
+    
+            <!--Inicio sección 2: Puntos de contacto-->
+            <div class="col-sm-6 col-md-4 gy-5 col-sm-auto">
+                <h2>Contactános</h2>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:bimbabiocosmetica@gmail.com"><img src="../images/arroba.svg" alt="ïcono de arroba" class="footer__imagenContacto"> bimbabiocosmética@gmaill.com</a></li>
+                    <li><img src="../images/ubicacion.svg" alt="Ícono de ubicación" class="footer_imagenContacto"> Villa Adelina</li>
+                </ul>
+            </div>
+    
+            <!--Inicio sección 3: Links a redes sociales-->
+            <div class="col-sm-6 col-md-2 gy-5 col-sm-auto">
+                <h2>Redes</h2>
+                <a href="https://www.facebook.com/bimbabiocosmetica-104029528252820" target="_blank">
+                    <img src="../images/facebook.svg" alt="Ícono cuenta de Facebook" title="Facebook Bimba Biocosmética" class="footer__redes">
+                </a>
+                <a href="https://www.instagram.com/bimbabiocosmetica/" target="_blank">
+                    <img src="../images/instagram.svg" alt="Ícono cuenta de Instagram" Title="Instagram Bimba Biocosmética" class="footer__redes">
+                </a>
+            </div>
+    
+            <!--Inicio sección 4: Suscripción newsletter-->
+            <div class="col-sm-6 col-md-3 gy-5 col-sm-auto">
+                <h2>Newsletter</h2>
+                <form action="" method="GET" enctype="application/x-www-form-urlencoded">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control camposFormulario" placeholder="Email" aria-label="Email" aria-describedby="button-addon2" required>
+                        <button class="btn botones--pequeños" type="button" id="button-addon2">Enviar</button>
+                    </div>     
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>
