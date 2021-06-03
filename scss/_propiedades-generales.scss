@@ -60,6 +60,12 @@ a {
     font-weight: 300;
 }
 
+.accordion-button:not(.collapsed) {
+    color: $verdeOscuro !important;
+    background-color: $verdeClaro;
+    font-weight: 500;
+}
+
 .botones {
     background-color: $verdeOscuro;
     color: $blanco;

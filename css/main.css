@@ -50,6 +50,11 @@ a {
   color: #212121;
   font-weight: 300; }
 
+.accordion-button:not(.collapsed) {
+  color: #335145 !important;
+  background-color: #E8F5E9;
+  font-weight: 500; }
+
 .botones, .botones--medianos, .botones--pequeños {
   background-color: #335145;
   color: #ffffff;
