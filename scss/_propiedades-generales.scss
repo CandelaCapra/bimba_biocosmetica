@@ -49,6 +49,9 @@ a {
 .camposFormulario {
     border-color: $verdeIntermedio;
     font-weight: 150*2;
+    &:focus{
+        border-color: $verdeOscuro;
+    }
 }
 
 .badge--verde { /*esto modifica una clase de Bootstrap*/
