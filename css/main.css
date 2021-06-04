@@ -38,6 +38,11 @@ a {
     text-decoration: underline;
     color: #212121; }
 
+.seleccionado {
+  text-decoration: underline;
+  text-decoration-color: #BFF0CF;
+  text-decoration-thickness: 0.25rem; }
+
 .camposFormulario {
   border-color: #cae0d2;
   font-weight: 300; }
@@ -115,8 +120,10 @@ header {
     color: #212121; }
   .footer__imagenContacto {
     padding-bottom: 0.25rem; }
-  .footer__redes:hover {
+  .footer__imagenRedes:hover {
     opacity: 70%; }
+  .footer__enlaceRedes:hover {
+    text-decoration: none; }
 
 /*Página principal*/
 .bannerPrincipal {
@@ -154,7 +161,7 @@ header {
   .grillaProductos__precio {
     color: #335145;
     font-weight: 500; }
-  .grillaProductos div:hover {
+  .grillaProductos img:hover {
     transform: scale(1.1, 1.1); }
   .grillaProductos__titulo:hover {
     transform: none !important; }

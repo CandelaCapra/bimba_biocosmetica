@@ -11,8 +11,11 @@
     &__imagenContacto {
         padding-bottom: 0.25rem;
     }
-    &__redes:hover {
+    &__imagenRedes:hover {
         opacity: 7%*10;
+    }
+    &__enlaceRedes:hover {
+        text-decoration: none;
     }
 }
 

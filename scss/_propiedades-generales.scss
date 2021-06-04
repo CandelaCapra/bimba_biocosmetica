@@ -46,6 +46,12 @@ a {
     }
 }
 
+.seleccionado {
+    text-decoration: underline;
+    text-decoration-color: $verdeLogo;
+    text-decoration-thickness: 0.25rem;
+}
+
 .camposFormulario {
     border-color: $verdeIntermedio;
     font-weight: 150*2;
