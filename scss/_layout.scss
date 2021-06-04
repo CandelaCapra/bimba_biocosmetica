@@ -24,16 +24,17 @@
         align-items: center;
     }
     p {
-        font-size: 1.125rem;
         font-weight: 300;
-        padding: 1rem;
+        padding: 1rem 0rem 0rem 1rem;
+        line-height: 1rem;
     }
     span {
         font-weight: 400;
         display: block;
+        text-transform: uppercase;
     }
     &__imagen {
-        height: 3.625rem;
+        height: 2rem;
         width: auto;
     }
 }
@@ -49,7 +50,7 @@
     }
     img:hover {
         transform: scale(1.03,1.03);
-        box-shadow: 2px 2px 2px $gris;
+        box-shadow: 0.125rem 0.125rem 0.125rem $gris;
     }
     &__titulo:hover{
         transform: none !important;

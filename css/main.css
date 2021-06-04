@@ -1,8 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
-  text-align: justify; }
+  color: #212121; }
 
 main {
   animation-name: cargaPagina;
@@ -147,14 +146,15 @@ header {
     justify-content: center;
     align-items: center; }
   .beneficios p {
-    font-size: 1.125rem;
     font-weight: 300;
-    padding: 1rem; }
+    padding: 1rem 0rem 0rem 1rem;
+    line-height: 1rem; }
   .beneficios span {
     font-weight: 400;
-    display: block; }
+    display: block;
+    text-transform: uppercase; }
   .beneficios__imagen {
-    height: 3.625rem;
+    height: 2rem;
     width: auto; }
 
 .grillaProductos {
@@ -166,7 +166,7 @@ header {
     font-weight: 500; }
   .grillaProductos img:hover {
     transform: scale(1.03, 1.03);
-    box-shadow: 2px 2px 2px #d5d5d5; }
+    box-shadow: 0.125rem 0.125rem 0.125rem #d5d5d5; }
   .grillaProductos__titulo:hover {
     transform: none !important; }
 
@@ -210,8 +210,8 @@ table {
     padding: 0.625rem; }
 
 @media only screen and (max-width: 576px) {
-  .bannerPrincipal__texto__parrafo, .categorias {
-    display: none; }
+  .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
+    display: none !important; }
   .bannerPrincipal__texto h1 {
     margin: 1rem 0rem;
     font-size: 1.5rem; } }

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 576px){
-    .bannerPrincipal__texto__parrafo, .categorias {
-        display: none;
+    .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
+        display: none !important;
     }
 
     .bannerPrincipal__texto h1 {
@@ -14,5 +14,6 @@
         display: none;
     }
 }
+
 
 
