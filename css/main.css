@@ -47,7 +47,8 @@ a {
   border-color: #cae0d2;
   font-weight: 300; }
   .camposFormulario:focus {
-    border-color: #335145; }
+    border-color: #335145;
+    box-shadow: none; }
 
 .badge--verde {
   /*esto modifica una clase de Bootstrap*/
@@ -55,10 +56,12 @@ a {
   color: #212121;
   font-weight: 300; }
 
-.accordion-button:not(.collapsed) {
-  color: #335145 !important;
-  background-color: #E8F5E9;
-  font-weight: 500; }
+.accordion-button {
+  box-shadow: none; }
+  .accordion-button:not(.collapsed) {
+    color: #335145;
+    background-color: #E8F5E9;
+    font-weight: 500; }
 
 .botones, .botones--medianos, .botones--pequeños {
   background-color: #335145;
@@ -162,25 +165,23 @@ header {
     color: #335145;
     font-weight: 500; }
   .grillaProductos img:hover {
-    transform: scale(1.1, 1.1); }
+    transform: scale(1.03, 1.03);
+    box-shadow: 2px 2px 2px #d5d5d5; }
   .grillaProductos__titulo:hover {
     transform: none !important; }
 
 /*Animación página nosotros*/
-.paginaNosotros {
-  text-align: center; }
-  .paginaNosotros__imagen {
-    animation-name: agrandar;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-timing-function: ease; }
+.paginaNosotrosImagen {
+  animation-name: aclarar;
+  animation-duration: 0.8s;
+  animation-delay: 0s;
+  animation-timing-function: ease; }
 
-@keyframes agrandar {
+@keyframes aclarar {
   0% {
-    width: 0%;
-    height: auto; }
+    filter: blur(1.5rem); }
   100% {
-    width: 100%; } }
+    filter: blur(0px); } }
 
 .error404 {
   background-image: url(../images/error.jpeg);

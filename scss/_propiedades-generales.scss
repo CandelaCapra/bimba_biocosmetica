@@ -57,6 +57,7 @@ a {
     font-weight: 150*2;
     &:focus{
         border-color: $verdeOscuro;
+        box-shadow: none;
     }
 }
 
@@ -66,10 +67,13 @@ a {
     font-weight: 300;
 }
 
-.accordion-button:not(.collapsed) {
-    color: $verdeOscuro !important;
-    background-color: $verdeClaro;
-    font-weight: 500;
+.accordion-button{
+    box-shadow: none;
+    &:not(.collapsed) {
+        color: $verdeOscuro;
+        background-color: $verdeClaro;
+        font-weight: 500;
+    }
 }
 
 .botones {

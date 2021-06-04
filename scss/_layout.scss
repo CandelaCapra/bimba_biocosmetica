@@ -48,7 +48,8 @@
         font-weight: 500;
     }
     img:hover {
-        transform: scale(1.1,1.1);
+        transform: scale(1.03,1.03);
+        box-shadow: 2px 2px 2px $gris;
     }
     &__titulo:hover{
         transform: none !important;
@@ -56,20 +57,19 @@
 }
 
 /*Animación página nosotros*/
-.paginaNosotros {
-    text-align: center;
-    &__imagen {
-        animation-name: agrandar;
-        animation-duration: 0.5s;
+
+.paginaNosotrosImagen {
+        animation-name: aclarar;
+        animation-duration: 0.8s;
         animation-delay: 0s;
         animation-timing-function: ease;
     }
+
+@keyframes aclarar {
+    0%{filter:blur(1.5rem);}
+    100%{filter:blur(0px);}
 }
 
-@keyframes agrandar {
-    0%{width:0%; height: auto;}
-    100%{width: 100%;}
-}
 
 .error404 {
     background-image: url(../images/error.jpeg);
