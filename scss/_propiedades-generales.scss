@@ -85,7 +85,15 @@ a {
         color: $negro;
         text-decoration: none;
     }
-
+    &--principal {
+        @extend .botones;
+        background-color: $verdeLogo;
+        color: $negro;
+        &:hover{
+            background-color: $verdeOscuro;
+            color: $blanco;
+        }
+    }
     $tamano: ( 
         medianos: (14rem/16),
         pequeños: (12rem/16),
@@ -97,4 +105,3 @@ a {
         } 
     }
 }
-

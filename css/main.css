@@ -62,15 +62,21 @@ a {
     background-color: #E8F5E9;
     font-weight: 500; }
 
-.botones, .botones--medianos, .botones--pequeños {
+.botones, .botones--principal, .botones--medianos, .botones--pequeños {
   background-color: #335145;
   color: #ffffff;
   text-transform: uppercase;
   transition: background-color 1s; }
-  .botones:hover, .botones--medianos:hover, .botones--pequeños:hover {
+  .botones:hover, .botones--principal:hover, .botones--medianos:hover, .botones--pequeños:hover {
     background-color: #BFF0CF;
     color: #212121;
     text-decoration: none; }
+  .botones--principal {
+    background-color: #BFF0CF;
+    color: #212121; }
+    .botones--principal:hover {
+      background-color: #335145;
+      color: #ffffff; }
   .botones--medianos {
     font-size: 0.875rem; }
   .botones--pequeños {
@@ -131,16 +137,20 @@ header {
 .bannerPrincipal {
   color: #ffffff; }
   .bannerPrincipal__texto {
-    position: absolute; }
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    padding-top: 15%; }
     .bannerPrincipal__texto h1 {
-      font-size: 2.5rem;
-      font-weight: 500;
-      text-align: left; }
+      font-size: 2.7rem;
+      font-weight: 500; }
     .bannerPrincipal__texto__parrafo {
-      text-align: left; }
+      font-size: 1.25rem;
+      text-transform: uppercase; }
 
 .beneficios {
-  text-align: center; }
+  text-align: center;
+  margin: 2rem 0rem; }
   .beneficios div {
     display: flex;
     justify-content: center;
@@ -210,12 +220,23 @@ table {
     padding: 0.625rem; }
 
 @media only screen and (max-width: 576px) {
-  .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
+  .beneficios__datos, .categorias {
     display: none !important; }
-  .bannerPrincipal__texto h1 {
-    margin: 1rem 0rem;
-    font-size: 1.5rem; } }
+  .bannerPrincipal__texto {
+    padding-top: 6%; }
+    .bannerPrincipal__texto h1 {
+      font-size: 2rem; }
+  .bannerPrincipal__texto__parrafo {
+    font-size: 1rem; } }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .bannerPrincipal__texto__parrafo span, .categorias {
+  .bannerPrincipal__texto {
+    padding-top: 7%; }
+  .categorias {
+    display: none; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .bannerPrincipal__texto {
+    padding-top: 12%; }
+  .categorias {
     display: none; } }
