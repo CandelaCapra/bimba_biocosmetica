@@ -1,4 +1,17 @@
 @media only screen and (max-width: 576px){
+    .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
+        display: none !important;
+    }
+
+    .bannerPrincipal__texto {
+        padding-top: 7%;
+        h1 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 483px) and (max-width: 576px){   
     .beneficios__datos, .categorias {
         display: none !important;
     }
