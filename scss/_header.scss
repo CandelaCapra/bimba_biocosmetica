@@ -59,3 +59,10 @@ header {
         }
     }
 }
+
+/* Indica la sección en la que se encuentra el usuario*/
+.seleccionado {
+    text-decoration: underline;
+    text-decoration-color: $verdeLogo;
+    text-decoration-thickness: 0.25rem;
+}

@@ -37,30 +37,12 @@ a {
     text-decoration: underline;
     color: #212121; }
 
-.seleccionado {
-  text-decoration: underline;
-  text-decoration-color: #BFF0CF;
-  text-decoration-thickness: 0.25rem; }
-
 .camposFormulario {
   border-color: #cae0d2;
   font-weight: 300; }
   .camposFormulario:focus {
     border-color: #335145;
     box-shadow: none; }
-
-.badge--verde {
-  /*esto modifica una clase de Bootstrap*/
-  background-color: #BFF0CF;
-  color: #212121;
-  font-weight: 300; }
-
-.accordion-button {
-  box-shadow: none !important; }
-  .accordion-button:not(.collapsed) {
-    color: #335145;
-    background-color: #E8F5E9;
-    font-weight: 500; }
 
 .botones, .botones--principal, .botones--medianos, .botones--pequeños {
   background-color: #335145;
@@ -81,6 +63,19 @@ a {
     font-size: 0.875rem; }
   .botones--pequeños {
     font-size: 0.75rem; }
+
+/*Esto modifica clases de Bootstrap*/
+.badge--verde {
+  background-color: #BFF0CF;
+  color: #212121;
+  font-weight: 300; }
+
+.accordion-button {
+  box-shadow: none !important; }
+  .accordion-button:not(.collapsed) {
+    color: #335145;
+    background-color: #E8F5E9;
+    font-weight: 500; }
 
 header {
   position: sticky;
@@ -119,6 +114,12 @@ header {
     color: #212121 !important; }
     .menu__linkDropdown:hover {
       background-color: #BFF0CF; }
+
+/* Indica la sección en la que se encuentra el usuario*/
+.seleccionado {
+  text-decoration: underline;
+  text-decoration-color: #BFF0CF;
+  text-decoration-thickness: 0.25rem; }
 
 .footer {
   background: linear-gradient(180deg, #E8F5E9 39%, #cae0d2 95%); }
@@ -178,8 +179,6 @@ header {
   .grillaProductos img:hover {
     transform: scale(1.03, 1.03);
     box-shadow: 0.125rem 0.125rem 0.125rem #d5d5d5; }
-  .grillaProductos__titulo:hover {
-    transform: none !important; }
 
 /*Animación página nosotros*/
 .paginaNosotrosImagen {
@@ -220,7 +219,7 @@ table {
     border: solid #212121 0.063rem;
     padding: 0.625rem; }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 482px) {
   .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
     display: none !important; }
   .bannerPrincipal__texto {

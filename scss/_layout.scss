@@ -19,7 +19,6 @@
         }
     }
 }
-
 .beneficios {
     text-align: center;
     margin: 2rem 0rem;
@@ -44,6 +43,7 @@
     }
 }
 
+
 .grillaProductos {
     text-align: center;
     h3 {
@@ -57,20 +57,16 @@
         transform: scale(1.03,1.03);
         box-shadow: 0.125rem 0.125rem 0.125rem $gris;
     }
-    &__titulo:hover{
-        transform: none !important;
-    }
 }
 
-/*Animación página nosotros*/
 
+/*Animación página nosotros*/
 .paginaNosotrosImagen {
         animation-name: aclarar;
         animation-duration: 0.8s;
         animation-delay: 0s;
         animation-timing-function: ease;
     }
-
 @keyframes aclarar {
     0%{filter:blur(1.5rem);}
     100%{filter:blur(0px);}
