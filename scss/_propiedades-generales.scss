@@ -67,7 +67,7 @@ a {
 }
 
 .accordion-button{
-    box-shadow: none;
+    box-shadow: none !important;
     &:not(.collapsed) {
         color: $verdeOscuro;
         background-color: $verdeClaro;

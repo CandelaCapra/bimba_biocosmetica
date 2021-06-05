@@ -56,7 +56,7 @@ a {
   font-weight: 300; }
 
 .accordion-button {
-  box-shadow: none; }
+  box-shadow: none !important; }
   .accordion-button:not(.collapsed) {
     color: #335145;
     background-color: #E8F5E9;
