@@ -1,23 +1,19 @@
-@media only screen and (max-width: 482px){
+@media only screen and (max-width: 575px){
     .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
         display: none !important;
     }
 
     .bannerPrincipal__texto {
-        padding-top: 7%;
+        padding-top: 8%;
         h1 {
             font-size: 1.25rem;
         }
     }
 }
 
-@media only screen and (min-width: 483px) and (max-width: 576px){   
-    .beneficios__datos, .categorias {
-        display: none !important;
-    }
-
+@media only screen and (min-width: 576px) and (max-width: 767px){   
     .bannerPrincipal__texto {
-        padding-top: 6%;
+        padding-top: 8%;
         h1 {
             font-size: 2rem;
         }
@@ -26,21 +22,15 @@
     .bannerPrincipal__texto__parrafo {
         font-size: 1rem;
     }
-}
 
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .bannerPrincipal__texto {
-        padding-top: 7%;
-    }
-    
-    .categorias {
-        display: none;
+    .beneficios__datos, .categorias {
+        display: none !important;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
-    .bannerPrincipal__texto {
-        padding-top: 12%;
+   .bannerPrincipal__texto {
+        padding-top: 10%;
     }
     
     .categorias {

@@ -2,6 +2,7 @@
 
 .footer {
     background: linear-gradient(180deg, $verdeClaro 39%, $verdeIntermedio 95%);
+    padding: 1rem 0;
     h2 {
         color: $verdeOscuro;
     }
@@ -11,11 +12,16 @@
     &__imagenContacto {
         padding-bottom: 0.25rem;
     }
-    &__imagenRedes:hover {
-        opacity: 7%*10;
+    &__imagenRedes {
+        padding: 0 0.25rem 1rem 0;
+        &:hover {
+            opacity: 7%*10;
+        }
     }
     &__enlaceRedes:hover {
         text-decoration: none;
     }
 }
-
+.hola {
+    width:80%;
+}

@@ -2,12 +2,12 @@
 
 /*Página principal*/
 .bannerPrincipal {
-   color: $blanco;
+   color: $blanco;;
     &__texto{
         position: absolute;
         text-align: center;
         width: 100vw;
-        padding-top: 17%;
+        padding-top: 12%;
         h1 {
             font-size: 2.7rem;
             font-weight: 700;
