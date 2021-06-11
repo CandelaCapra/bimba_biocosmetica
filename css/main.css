@@ -129,16 +129,13 @@ header {
   .footer a:hover {
     color: #212121; }
   .footer__imagenContacto {
-    padding-bottom: 0.25rem; }
+    padding-bottom: 0.50rem; }
   .footer__imagenRedes {
-    padding: 0 0.25rem 1rem 0; }
+    padding: 0 0.50rem 1rem 0; }
     .footer__imagenRedes:hover {
       opacity: 70%; }
   .footer__enlaceRedes:hover {
     text-decoration: none; }
-
-.hola {
-  width: 80%; }
 
 /*Página principal*/
 .bannerPrincipal {
@@ -147,6 +144,7 @@ header {
     position: absolute;
     text-align: center;
     width: 100vw;
+    vertical-align: center;
     padding-top: 12%; }
     .bannerPrincipal__texto h1 {
       font-size: 2.7rem;
@@ -177,7 +175,11 @@ header {
 
 .grillaProductos {
   text-align: center; }
+  .grillaProductos div {
+    padding-top: 0.50rem;
+    padding-bottom: 0.50rem; }
   .grillaProductos h3 {
+    margin-top: 0.50rem;
     margin-bottom: 0rem; }
   .grillaProductos__precio {
     color: #335145;
