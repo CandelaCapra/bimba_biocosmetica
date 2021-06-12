@@ -64,6 +64,16 @@ a {
   .botones--pequeños {
     font-size: 0.75rem; }
 
+.botonWhatsapp {
+  max-width: 3rem;
+  padding: 0.7rem;
+  background-color: #00bb2d;
+  position: fixed;
+  bottom: 3vh;
+  right: 3vh;
+  z-index: 5;
+  border-radius: 50%; }
+
 /*Esto modifica clases de Bootstrap*/
 .badge--verde {
   background-color: #BFF0CF;
@@ -123,19 +133,25 @@ header {
 
 .footer {
   background: linear-gradient(180deg, #E8F5E9 39%, #cae0d2 95%);
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  font-size: 90%; }
   .footer h2 {
     color: #335145; }
   .footer a:hover {
     color: #212121; }
   .footer__imagenContacto {
-    padding-bottom: 0.50rem; }
+    padding-bottom: 0.5rem;
+    max-width: 1rem; }
   .footer__imagenRedes {
     padding: 0 0.50rem 1rem 0; }
     .footer__imagenRedes:hover {
       opacity: 70%; }
   .footer__enlaceRedes:hover {
     text-decoration: none; }
+  .footer__copyright {
+    font-size: 0.75rem; }
+  .footer__email {
+    letter-spacing: -0.05rem; }
 
 /*Página principal*/
 .bannerPrincipal {

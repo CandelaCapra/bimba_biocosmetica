@@ -84,6 +84,17 @@ a {
         } 
     }
 }
+    
+.botonWhatsapp{
+    max-width: 3rem;
+    padding: 0.7rem;
+    background-color: #00bb2d;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
+    z-index: 5;
+    border-radius: 50%;
+    }
 
 /*Esto modifica clases de Bootstrap*/
 .badge--verde { 

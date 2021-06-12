@@ -3,6 +3,7 @@
 .footer {
     background: linear-gradient(180deg, $verdeClaro 39%, $verdeIntermedio 95%);
     padding: 1rem 0;
+    font-size: 90%;
     h2 {
         color: $verdeOscuro;
     }
@@ -10,7 +11,8 @@
         color: $negro;
     }
     &__imagenContacto {
-        padding-bottom: 0.50rem;
+        padding-bottom: 0.5rem;
+        max-width: 1rem;
     }
     &__imagenRedes {
         padding: 0 0.50rem 1rem 0;
@@ -20,5 +22,11 @@
     }
     &__enlaceRedes:hover {
         text-decoration: none;
+    }
+    &__copyright {
+        font-size: 0.75rem;
+    }
+    &__email {
+        letter-spacing: -0.05rem;
     }
 }
