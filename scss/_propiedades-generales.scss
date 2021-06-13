@@ -64,23 +64,29 @@ a {
         color: $negro;
         text-decoration: none;
     }
-    &--principal {
-        @extend .botones;
-        background-color: $verdeLogo;
-        color: $negro;
-        &:hover{
-            background-color: $verdeOscuro;
-            color: $blanco;
-        }
-    }
-    $tamano: ( 
+    $tipo: ( 
         medianos: (14rem/16),
         pequeños: (12rem/16),
+        principal: (14rem/16),
+        secundario: (12rem/16)
     );
-    @each $size, $font in $tamano {
+    @each $size, $font in $tipo {
         &--#{$size}{
             font-size: $font;
-            @extend .botones;
+            @if ($size == "principal") {
+                background-color: $verdeLogo;
+                color: $negro;
+                    &:hover{
+                background-color: $verdeOscuro;
+                color: $blanco;
+                }
+            }
+            @if ($size == "secundario") {
+                background-color: $blanco;
+                border-color: $verdeOscuro;
+                color: $verdeOscuro;
+                padding: 0.25rem 0.50rem;
+            }
         } 
     }
 }

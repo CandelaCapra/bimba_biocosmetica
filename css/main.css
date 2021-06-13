@@ -44,25 +44,32 @@ a {
     border-color: #335145;
     box-shadow: none; }
 
-.botones, .botones--principal, .botones--medianos, .botones--pequeños {
+.botones {
   background-color: #335145;
   color: #ffffff;
   text-transform: uppercase;
   transition: background-color 1s; }
-  .botones:hover, .botones--principal:hover, .botones--medianos:hover, .botones--pequeños:hover {
+  .botones:hover {
     background-color: #BFF0CF;
     color: #212121;
     text-decoration: none; }
+  .botones--medianos {
+    font-size: 0.875rem; }
+  .botones--pequeños {
+    font-size: 0.75rem; }
   .botones--principal {
+    font-size: 0.875rem;
     background-color: #BFF0CF;
     color: #212121; }
     .botones--principal:hover {
       background-color: #335145;
       color: #ffffff; }
-  .botones--medianos {
-    font-size: 0.875rem; }
-  .botones--pequeños {
-    font-size: 0.75rem; }
+  .botones--secundario {
+    font-size: 0.75rem;
+    background-color: #ffffff;
+    border-color: #335145;
+    color: #335145;
+    padding: 0.25rem 0.50rem; }
 
 .botonWhatsapp {
   max-width: 3rem;
@@ -90,7 +97,7 @@ a {
 header {
   position: sticky;
   top: 0rem;
-  z-index: 50; }
+  z-index: 5; }
 
 .cuenta {
   padding: 0rem 3rem;
@@ -160,8 +167,8 @@ header {
     position: absolute;
     text-align: center;
     width: 100vw;
-    vertical-align: center;
-    padding-top: 12%; }
+    padding-top: 12%;
+    padding-right: 3rem; }
     .bannerPrincipal__texto h1 {
       font-size: 2.7rem;
       font-weight: 700; }
@@ -225,11 +232,10 @@ header {
   justify-content: center; }
   .error404__div {
     background-color: #ffffff;
-    padding: 7rem 5rem; }
-  .error404__img {
-    max-width: 70vh; }
-  .error404__texto {
-    text-align: left; }
+    padding: 2rem;
+    width: 50vw; }
+  .error404 img {
+    width: 35vw; }
 
 table {
   margin-top: 1.563rem;
@@ -247,9 +253,12 @@ table {
   .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
     display: none !important; }
   .bannerPrincipal__texto {
-    padding-top: 8%; }
+    padding-top: 8%;
+    padding-right: 1.5rem; }
     .bannerPrincipal__texto h1 {
-      font-size: 1.25rem; } }
+      font-size: 1.25rem; }
+  .error404__div {
+    width: 70vw; } }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .bannerPrincipal__texto {

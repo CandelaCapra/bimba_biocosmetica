@@ -7,8 +7,8 @@
         position: absolute;
         text-align: center;
         width: 100vw;
-        vertical-align: center;
         padding-top: 12%;
+        padding-right: 3rem;
         h1 {
             font-size: 2.7rem;
             font-weight: 700;
@@ -87,12 +87,10 @@
     justify-content: center;
     &__div {
         background-color: $blanco;
-        padding:7rem 5rem;
+        padding: 2rem;
+        width: 50vw;
     }
-    &__img {
-        max-width: 70vh;
-    }
-    &__texto{
-        text-align: left;
+    img {
+        width: 35vw;
     }
 }
