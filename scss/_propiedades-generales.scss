@@ -24,12 +24,12 @@ $x:0.75;
     h#{$i} {
         font-size: 1rem+($x)-0.25;
         @if ($i==1) {
-            font-weight: 700;
+            font-weight: $negrita;
             text-align: center;
         }
         @else {
             @if ($i==3) {
-                font-weight: 500;
+                font-weight: $medium;
             }
         }
     }
@@ -47,7 +47,7 @@ a {
 
 .camposFormulario {
     border-color: $verdeIntermedio;
-    font-weight: 150*2;
+    font-weight: $light;
     &:focus{
         border-color: $verdeOscuro;
         box-shadow: none;
@@ -92,8 +92,8 @@ a {
 }
     
 .botonWhatsapp{
-    max-width: 3rem;
-    padding: 0.7rem;
+    max-width: 2.5rem;
+    padding: 0.5rem;
     background-color: #00bb2d;
     position: fixed;
     bottom: 3vh;
@@ -106,7 +106,7 @@ a {
 .badge--verde { 
     background-color: $verdeLogo;
     color: $negro;
-    font-weight: 300;
+    font-weight: $light;
 }
 
 .accordion-button{
@@ -114,6 +114,6 @@ a {
     &:not(.collapsed) {
         color: $verdeOscuro;
         background-color: $verdeClaro;
-        font-weight: 500;
+        font-weight: $medium;
     }
 }

@@ -12,11 +12,11 @@
         z-index: 4;
         h1 {
             font-size: 2.7rem;
-            font-weight: 700;
+            font-weight: $negrita;
         }
         &__parrafo {
             font-size: 1.25rem;
-            font-weight: 500;
+            font-weight: $medium;
             text-transform: uppercase;
         }
     }
@@ -30,12 +30,12 @@
         align-items: center;
     }
     p {
-        font-weight: 300;
+        font-weight: $light;
         padding: 1rem 0rem 0rem 1rem;
         line-height: 1rem;
     }
     span {
-        font-weight: 400;
+        font-weight: $regular;
         display: block;
         text-transform: uppercase;
     }
@@ -58,11 +58,14 @@
     }
     &__precio {
         color: $verdeOscuro;
-        font-weight: 500;
+        font-weight: $medium;
     }
-    img:hover {
-        transform: scale(1.03,1.03);
-        box-shadow: 0.125rem 0.125rem 0.125rem $gris;
+    img {
+        max-width: 21rem;
+        &:hover {
+            transform: scale(1.03,1.03);
+            box-shadow: 0.125rem 0.125rem 0.125rem $gris;
+        }
     }
 }
 

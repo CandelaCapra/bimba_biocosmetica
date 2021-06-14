@@ -1,19 +1,18 @@
 @import "variables.scss";
 
 table {
-    margin-top: 1.563rem;
-    border: solid $negro 0.063rem;
+    margin-top: 1.5rem;
+    border: solid $negro 0.05rem;
 
     th {
         color: $verdeOscuro;
         background-color: $verdeClaro;
-        font-size: 1.125rem;
-        font-weight: 700;
+        font-weight: $negrita;
     }
     
     td, th {
-        border: solid $negro 0.063rem;
-        padding: 0.625rem;
+        border: solid $negro 0.05rem;
+        padding: 0.5rem;
     }
 }
 
