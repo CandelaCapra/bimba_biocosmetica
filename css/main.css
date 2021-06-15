@@ -251,11 +251,25 @@ table {
     border: solid #212121 0.05rem;
     padding: 0.5rem; }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 498px) {
   .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
     display: none !important; }
   .bannerPrincipal__texto {
-    padding-top: 15%;
+    padding-top: 8%;
+    padding-right: 1.5rem; }
+    .bannerPrincipal__texto h1 {
+      font-size: 1.5rem; }
+  .bannerPrincipal img {
+    height: 25vh;
+    object-fit: cover; }
+  .error404__div {
+    width: 70vw; } }
+
+@media only screen and (min-width: 499px) and (max-width: 575px) {
+  .beneficios__datos, .categorias {
+    display: none !important; }
+  .bannerPrincipal__texto {
+    padding-top: 8%;
     padding-right: 1.5rem; }
     .bannerPrincipal__texto h1 {
       font-size: 1.5rem; }
