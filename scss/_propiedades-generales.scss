@@ -13,12 +13,12 @@ main {
         height: auto;
     }
 }
-
 @keyframes cargaPagina {
     0% {opacity:0; transform: translateY(-0.635rem);}
     100% {opacity: 1; transform: translateY(0rem);}
 }
 
+/*h1-h3*/
 $x:0.75;
 @for $i from 1 to 4{
     h#{$i} {
@@ -64,45 +64,53 @@ a {
         color: $negro;
         text-decoration: none;
     }
-    $tipo: ( 
+
+    $tamaño: ( 
         medianos: (14rem/16),
-        pequeños: (12rem/16),
-        principal: (14rem/16),
-        secundario: (12rem/16)
+        pequeños: (12rem/16)
     );
-    @each $size, $font in $tipo {
+    @each $size, $font in $tamaño {
         &--#{$size}{
             font-size: $font;
-            @if ($size == "principal") {
-                background-color: $verdeLogo;
+        } 
+    }
+
+    $color: (
+        principal: $verdeLogo,
+        secundarios: $blanco,
+        whatsapp: #00bb2d
+    );
+    @each $tipo, $fondo in $color {
+        &--#{$tipo}{
+            background-color: $fondo;
+            @if ($tipo == "principal") {
                 color: $negro;
+                font-size: 0,85rem;
                     &:hover{
                 background-color: $verdeOscuro;
                 color: $blanco;
                 }
             }
-            @if ($size == "secundario") {
-                background-color: $blanco;
+            @if ($tipo == "secundarios") {
                 border-color: $verdeOscuro;
                 color: $verdeOscuro;
+                font-size: 0.75rem;
                 padding: 0.25rem 0.50rem;
             }
-        } 
+            @if ($tipo == "whatsapp") {
+                max-width: 2.5rem;
+                padding: 0.5rem;
+                position: fixed;
+                bottom: 3vh;
+                right: 3vh;
+                z-index: 3;
+                border-radius: 50%;
+            }
+        }    
     }
 }
-    
-.botonWhatsapp{
-    max-width: 2.5rem;
-    padding: 0.5rem;
-    background-color: #00bb2d;
-    position: fixed;
-    bottom: 3vh;
-    right: 3vh;
-    z-index: 5;
-    border-radius: 50%;
-    }
 
-/*Esto modifica clases de Bootstrap*/
+/*Cambios clases de Bootstrap*/
 .badge--verde { 
     background-color: $verdeLogo;
     color: $negro;
