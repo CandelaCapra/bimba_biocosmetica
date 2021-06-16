@@ -253,6 +253,8 @@ header {
     letter-spacing: -0.05rem; }
 
 @media only screen and (max-width: 498px) {
+  .dropdown-menu {
+    border-color: #ffffff; }
   .bannerPrincipal__texto__parrafo, .beneficios__datos, .categorias {
     display: none !important; }
   .bannerPrincipal__texto {
@@ -266,6 +268,8 @@ header {
     width: 70vw; } }
 
 @media only screen and (min-width: 499px) and (max-width: 575px) {
+  .dropdown-menu {
+    border-color: #ffffff; }
   .beneficios__datos, .categorias {
     display: none !important; }
   .bannerPrincipal__texto {
@@ -276,6 +280,8 @@ header {
     width: 70vw; } }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .dropdown-menu {
+    border-color: #ffffff; }
   .bannerPrincipal__texto {
     padding-top: 8%; }
     .bannerPrincipal__texto h1 {
@@ -286,6 +292,8 @@ header {
     display: none !important; } }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .dropdown-menu {
+    border-color: #ffffff; }
   .bannerPrincipal__texto {
     padding-top: 10%; }
   .categorias {
